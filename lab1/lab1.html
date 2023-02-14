@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB_1</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./lab1.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/87b5cb0a2b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-light" style="background-color: #010811">
+        <div class="container-fluid">
+          <a href="/" class="navbar-brand">
+            <img
+              src="./LogotipoTransHorizontalAzul.png"
+              alt="Logo de tecnológico de Monterrey"
+              height="50"
+              width=""
+            />
+          </a>
+        </div>
+      </nav>
+
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>
+          <span>L</span>
+          <span>a</span>
+          <span>b</span>
+          <span></span>
+          <span>1</span>
+        </h1>
+      </div>
+    </header>
+
+    <section>
+      <div class="container mt-5 mb-5 d-flex">
+        <img src="./yo2.jpg" alt="" height="250" width="" class="me-5" />
+        <p>
+          Me llamo <strong>Daniel Emilio Fuentes Portaluppi</strong>, la mayoría
+          de mis amigos me conocen como "Portaluppi". Tengo 20 años soy de la
+          Ciudad de México pero he vivido toda mi vida en Querétaro. Estudió en
+          el Tec de Monterrey, la carrera de ITC (Ingeniería en Tecnologías
+          Computacionales) y actualmente estoy en 4to semestre.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://www.welivesecurity.com/wp-content/uploads/2021/08/Ataques-compa%C3%B1%C3%ADas-videojuegos-por-qu%C3%A9-son-blanco-atractivo.jpg"
+              class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Videojuegos</h5>
+                <p class="card-text justify-text">EXAMPLE</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <button class="btn-scrolltop" id="btn_scrolltop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <script>
+      const btn_scrolltop = document.getElementById("btn_scrolltop");
+      btn_scrolltop.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+      });
+
+      window.onscroll = () => {
+        if (window.scrollY < 300) {
+          btn_scrolltop.classList.remove("btn-scrolltop-on");
+        } else {
+          btn_scrolltop.classList.add("btn-scrolltop-on");
+        }
+      };
+    </script>
+
+    <section>
+      <footer class="foot">
+        <div class="group-1">
+          <div class="box">
+            <figure>
+              <a href="/">
+                <img
+                  src="images/Logos/cym_horiz.png"
+                  alt="Logo de control y medición"
+                />
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2>Sobre Nosotros</h2>
+            <p class="justify-text">
+              Desde ese punto de vista para GRUPO CONTROL Y MEDICIÓN significa
+              aportar valor al cliente, esto es, ofrecer unas condiciones de uso
+              del producto o servicio superiores a las que el cliente espera
+              recibir a un precio accesible.
+            </p>
+            <p class="justify-text">
+              También la calidad se refiere a minimizar las pérdidas que un
+              producto pueda causar a la sociedad humana mostrando cierto
+              interés por parte de la empresa a mantener la satisfacción del
+              cliente.
+            </p>
+            <p class="justify-text">
+              Una visión actual del concepto de calidad indica que calidad es
+              entregar al cliente no lo que quiere, sino lo que nunca había
+              imaginado que quería y que una vez que lo obtenga, se dé cuenta de
+              que era lo que siempre había querido.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Síguenos</h2>
+            <div class="social-media">
+              <a
+                href="https://www.facebook.com/controlymedicion/"
+                class="fa fa-facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://www.instagram.com/controlymedicion/"
+                class="fa fa-instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCEkwrnRur8nrffahkA0Kn1Q"
+                class="fa fa-youtube"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://twitter.com/CYM_Mexico?prefetchTimestamp=1572883916527"
+                class="fa fa-twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://es.linkedin.com/company/controlymedición"
+                class="fa fa-linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCE14rKML4jf-Si8ts1KqgFw"
+                class="fa fa-youtube"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="group-2">
+          <small
+            >&copy; 2022 <b>CONTROL Y MEDICIÓN</b> - Todos los Derechos
+            Reservados.</small
+          >
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
