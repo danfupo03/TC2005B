@@ -5,7 +5,7 @@ body {
   background-color: #010f1e;
 }
 
-h1 {
+h1, h2 {
   font-family: "Fjalla One", sans-serif;
 }
 
@@ -26,6 +26,10 @@ h1 {
 
 .justify-text {
   text-align: justify;
+}
+
+.name {
+  color: darkviolet;
 }
 
 .foot {
