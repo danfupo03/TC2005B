@@ -1,0 +1,3 @@
+Desde el lab1 ya se habían agregado diseños a la 
+página web. Por lo que el archivo de CSS se encuentra
+en el lab1.
