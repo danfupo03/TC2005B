@@ -1,3 +1,5 @@
 Desde el lab1 ya se habían agregado diseños a la 
 página web. Por lo que el archivo de CSS se encuentra
-en el lab1.
+en el lab1. Además ya en la página web del lab1 se encuentran
+las preguntas del lab3. Y el CSS minimizado también se 
+encuentra en el lab1.
