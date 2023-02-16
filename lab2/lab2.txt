@@ -1,2 +1,2 @@
 Ya se creó el repositorio con el nombre de TC2005B, y ya se 
-subió en el mismo el lab1.
+subió en dicho repositorio el lab1.
