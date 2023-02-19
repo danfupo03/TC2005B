@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lab4.css" />
+    <title>LAB_4</title>
+  </head>
+
+  <body>
+    <h1>Laboratorio 4</h1>
+
+    <section>
+      <div>
+        <h3>Ejercicio 1</h3>
+        <p>
+          Entrada: un número pedido con un prompt.
+          <br />Salida: Una tabla con los números del 1 al número dado con sus
+          cuadrados y cubos.
+        </p>
+        <table id="table">
+          <tr>
+            <th>Número</th>
+            <th>Cuadrado</th>
+            <th>Cubo</th>
+          </tr>
+        </table>
+        <button onclick="table()">Generar Tabla</button>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h3>Ejercicio 2</h3>
+        <p>
+          Entrada: Usando un prompt se pide el resultado de la suma de 2 números
+          generados de manera aleatoria.
+          <br />Salida: La página debe indicar si el resultado fue correcto o
+          incorrecto, y el tiempo que tardó el usuario en escribir la respuesta.
+        </p>
+        <button onclick="sum()">Generar Suma</button>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h3>Ejercicio 3</h3>
+        <p>
+          Función: contador.
+          <br />Parámetros: Un arreglo de números. <br />Regresa: La cantidad de
+          números negativos en el arreglo, la cantidad de 0's, y la cantidad de
+          valores mayores a 0 en el arreglo.
+        </p>
+        <button onclick="runAccountant()">Generar Contador</button>
+      </div>
+    </section>
+
+    <section>
+      <h3>Ejercicio 4</h3>
+      <p>
+        Función: promedios.
+        <br />Parámetros: Un arreglo de arreglos de números. <br />Regresa: Un
+        arreglo con los promedios de cada uno de los renglones de la matriz.
+      </p>
+      <table id="table2"></table>
+      <div id="averages"></div>
+      <button onclick="run()">Generar matriz y promedios</button>
+    </section>
+
+    <section>
+      <h3>Ejercicio 5</h3>
+      <p>
+        Función: inverso.
+        <br />Parámetros: Un número. <br />Regresa: El número con sus dígitos en
+        orden inverso.
+      </p>
+      <button onclick="reverse()">Generar Inverso</button>
+    </section>
+
+    <section>
+      <h3>Ejercicio 6</h3>
+      <p>
+        Crea una solución para un problema de tu elección (puede ser algo
+        relacionado con tus intereses, alguna problemática que hayas
+        identificado en algún ámbito, un problema de programación que hayas
+        resuelto en otro lenguaje, un problema de la ACM, entre otros). El
+        problema debe estar descrito en un documento HTML, y la solución
+        implementada en JavaScript, utilizando al menos la creación de un
+        objeto, el objeto además de su constructor deben tener al menos 2
+        métodos. Muestra los resultados en el documento HTML.
+      </p>
+      <h3>Generador de Canciones</h3>
+      <p>
+        El problema que resuelve es el que yo tengo de querer escuchar canciones
+        nuevas pero la mayoría de las veces Spotify las recomienda en base a mis
+        gustos y me gustaría algo más aleatorio. Por lo que este generador de
+        canciones es una solución a este problema. Claro que son canciones que
+        yo puse pero esto podría funcionar mejor si se conectara a la API de
+        Spotify y pudiera generar canciones de cualquier artista y género.
+      </p>
+      <button onclick="generateRecommendation()">Generar Canción</button>
+      <p id="recommendation"></p>
+    </section>
+
+    <section>
+      <h2>Preguntas</h2>
+      <ul>
+        <li>
+          <strong
+            >¿Qué diferencias y semejanzas hay entre Java y JavaScript?</strong
+          >
+        </li>
+        <ul>
+          <li><strong>Diferencias</strong></li>
+          <ul>
+            <li>
+              1. Java es un lenguaje de programación OOP, mientras que Java
+              Script es un lenguaje de scripts OOP.
+            </li>
+            <li>
+              2. Java crea aplicaciones que se ejecutan en una máquina o
+              explorador virtual, mientras que el código JavaScript sólo se
+              ejecuta en un explorador.
+            </li>
+            <li>
+              3. El código Java necesita compilación, mientras que el código
+              JavaScript está en todo el texto.
+            </li>
+            <li>4. Necesitan diferentes plugins.</li>
+          </ul>
+        </ul>
+        <ul>
+          <li><strong>Semejanzas</strong></li>
+          <ul>
+            <li>1. Proceden del lenguaje C</li>
+            <li>2. Tienen una sintaxis ligeramente parecida</li>
+          </ul>
+        </ul>
+        <li>
+          <strong
+            >¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</strong
+          >
+        </li>
+        <ul>
+          <li>1. setFullYear()</li>
+          <li>2. setMonth()</li>
+          <li>3. setDate()</li>
+          <li>4. setHours()</li>
+          <li>5. setMinutes()</li>
+          <li>6. setSeconds()</li>
+          <li>7. setMilliseconds()</li>
+          <li>8. setTime()</li>
+        </ul>
+        <li>
+          <strong
+            >¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</strong
+          >
+        </li>
+        <ul>
+          <li>1. push() - Inserta un elemento al final del arreglo.</li>
+          <li>2. unshift() - Inserta un elemento al inicio del arreglo.</li>
+          <li>3. pop() - Remueve un elemento del final del arreglo.</li>
+          <li>4. shift() - Remueve un elemento del principio del arreglo.)</li>
+          <li>5. slice() - Crea una copia sombra del arreglo.</li>
+          <li>6. Array.isArray() - Determina si el valor es un arreglo.</li>
+          <li>7. length - Determina el tamaño del arreglo.</li>
+        </ul>
+        <li>
+          <strong
+            >¿Cómo se declara una variable con alcance local dentro de una
+            función?</strong
+          >
+        </li>
+        <ul>
+          <li>
+            1. Con la palabra clave var . Por ejemplo, var x = 42 . Esta
+            sintaxis se puede utilizar para declarar variables locales y
+            globales, dependiendo del contexto de ejecución.
+          </li>
+          <li>
+            2. Con la palabra clave const o let . Por ejemplo, let y = 13.
+          </li>
+        </ul>
+        <li>
+          <strong
+            >¿Qué implicaciones tiene utilizar variables globales dentro de
+            funciones?</strong
+          >
+        </li>
+        <p>
+          Las variables globales no declaradas a menudo pueden provocar un
+          comportamiento inesperado. Por lo tanto, se desaconseja utilizar
+          variables globales no declaradas.
+        </p>
+      </ul>
+      <h2>Referencias</h2>
+      <ul>
+        <li>
+          - fw_error_www. (s.f.).
+          <a
+            href="https://www.java.com/es/download/help/java_javascript_es.html"
+            >https://www.java.com/es/download/help/java_javascript_es.html</a
+          >
+        </li>
+        <li>
+          - Gramática y Tipos - JavaScript | MDN. (2023, 14 febrero).
+          <a
+            href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Grammar_and_types"
+            >https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Grammar_and_types</a
+          >
+        </li>
+        <li>
+          - Universidad Europea. (2022, 8 agosto). Diferencias entre Java y
+          JavaScript.
+          <a
+            href="https://universidadeuropea.com/blog/diferencias-entre-java-y-javascript/"
+            >https://universidadeuropea.com/blog/diferencias-entre-java-y-javascript/</a
+          >
+        </li>
+        <li>
+          - Zubikarai, S. (2022, 12 enero). Manual de arreglos en JavaScript:
+          Métodos de arreglos de JS explicados con ejemplos. freeCodeCamp.org.
+          <a
+            href="https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/"
+            >https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>TC2005B - Laboratorio 6</p>
+      <p>Alumno: Daniel Emilio Fuentes Portaluppi</p>
+      <p>Matrícula: A01708302</p>
+    </footer>
+    <script src="lab4.js"></script>
+  </body>
+</html>
