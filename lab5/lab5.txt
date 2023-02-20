@@ -1,0 +1,3 @@
+Utilicé Bootstrap para este laboratorio
+y utilicé de plantilla el lab4 por lo tanto 
+aquel tiene casi nulo diseño. 
