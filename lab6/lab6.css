@@ -8,21 +8,18 @@
 }
 body{
     height: 100vh;
-    background: linear-gradient(
-        45deg,
-        #8b51ff,
-        #7a37ff
-    );
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+h1 {
+  color: black;
 }
 form{
     background-color: #ffffff;
     width: 450px;
     padding: 50px 40px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
     border-radius: 8px;
+    margin: auto;
     box-shadow: 20px 20px 30px rgba(0,0,0,0.15);
 }
 label{
@@ -45,9 +42,9 @@ input[type="password"]{
     border: 2px solid #c2c2c2;
 }
 input[type="button"]{
-    background-color: #7f3fff;
+    background-color: #fdbb2d;
     border: none;
-    color: #ffffff;
+    color: #101010;
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 1px;
@@ -56,7 +53,12 @@ input[type="button"]{
 }
 p{
     font-size: 14px;
-    margin: 15px 0;
-    display: inline-block;
+    margin-top: 15px;
     color: #ffffff;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
 }
