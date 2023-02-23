@@ -3,7 +3,10 @@
   <head>
     <title>Password Validation Page</title>
     <link rel="stylesheet" type="text/css" href="lab6.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,15 +33,19 @@
 
     <section>
       <div class="container mt-5 mb-5">
-        <h1 id="myHeader">Laboratorio 6</h1>
+        <h1 id="myHeader" style="color: black;">Laboratorio 6</h1>
         <div id="warning"></div>
-        <p>
-          1) Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para validar passwords. 
-          La página debe tener una forma con 2 campos, el campo de password, y el campo de verificar password. 
-          Utiliza al máximo tu creatividad e ingeniería para que la página sea un validador de passwords de estado 
-          del arte, con la mejor experiencia para el usuario.
+        <p class="justify">
+          1) Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para
+          validar passwords. La página debe tener una forma con 2 campos, el
+          campo de password, y el campo de verificar password. Utiliza al máximo
+          tu creatividad e ingeniería para que la página sea un validador de
+          passwords de estado del arte, con la mejor experiencia para el
+          usuario.
         </p>
-        <p id="myText">¡Descansa tu mouse aquí si no sabes que contraseña poner!</p>
+        <p id="myText">
+          ¡Descansa tu mouse aquí si no sabes que contraseña poner!
+        </p>
       </div>
     </section>
 
@@ -46,27 +53,73 @@
       <div class="container mt-5 mb-5">
         <form>
           <label>Password</label>
-          <input onmouseover="this.classList.add('bold')" onmouseout="this.classList.remove('bold')" type="password" id="password" placeholder="Insert your password"/>
+          <input
+            onmouseover="this.classList.add('bold')"
+            onmouseout="this.classList.remove('bold')"
+            type="password"
+            id="password"
+            placeholder="Insert your password"
+          />
           <label for="cnfrm-password">Confirm password</label>
-          <input onmouseover="this.classList.add('italic')" onmouseout="this.classList.remove('italic')" type="password" id="cnfrm-password" placeholder="Confirm your password"/>
+          <input
+            onmouseover="this.classList.add('italic')"
+            onmouseout="this.classList.remove('italic')"
+            type="password"
+            id="cnfrm-password"
+            placeholder="Confirm your password"
+          />
           <p id="message"></p>
-          <input type="button" onclick="checkPassword()" value="Submit"/>
+          <input type="button" onclick="checkPassword()" value="Submit" />
         </form>
       </div>
     </section>
 
     <section>
       <div class="container mt-5 mb-5">
-        <p>
-          2) Cambia el estilo de las letras de alguna parte del documento con eventos diferentes a onClick. 
-          <strong style="color: black;">Respuesta:</strong> Lo que hice fue que cuando el mouse se pone sobre el campo de password, cambia a "bold" 
-          y en el de confirmar password, cambia a "italic".
-          <br><br>3) Para los campos de una forma, o para algún texto corto del documento, haz que de manera 
-          dinámica aparezca ayuda o información relevante o complementaria. Usa tu creatividad.
+        <p class="justify">
+          2) Cambia el estilo de las letras de alguna parte del documento con
+          eventos diferentes a onClick.
+          <strong style="color: black">Respuesta:</strong> Lo que hice fue que
+          cuando el mouse se pone sobre el campo de password, cambia a "bold" y
+          en el de confirmar password, cambia a "italic". <br /><br />3) Para
+          los campos de una forma, o para algún texto corto del documento, haz
+          que de manera dinámica aparezca ayuda o información relevante o
+          complementaria. Usa tu creatividad.
+          <strong style="color: black">Respuesta:</strong> Lo que hice fue que
+          si el usurio deja el mouse sobre un texto que dice "¡Descansa tu mouse
+          aquí si no sabes que contraseña poner!", aparece una alerta divertida.
         </p>
       </div>
     </section>
 
+    <section>
+      <div class="container mt-5 mb-5">
+        <h2 style="color: black;">Preguntas</h2>
+        <p class="justify">
+          <strong style="color: black"
+            >1) ¿Por qué es una buena práctica usar JavaScript para checar que
+            sean válidos los inputs de las formas antes de enviar los datos al
+            servidor?</strong
+          >
+          <br />Antes de enviar un formulario al servidor, se recomienda validar
+          mediante JavaScript los datos insertados por el usuario. De esta
+          forma, si el usuario ha cometido algún error al rellenar el
+          formulario, se le puede notificar de forma instantánea, sin necesidad
+          de esperar la respuesta del servidor. <br /><br /><strong style="color: black"
+          >2) ¿Cómo puedes
+          saltarte la seguridad de validaciones hechas con JavaScript?</strong>
+
+          <br /><br /><strong style="color: black"
+          >3) Si te puedes saltar la seguridad de las validaciones de
+          JavaScript, entonces ¿por qué la primera pregunta dice que es una
+          buena práctica?</strong>
+        </p>
+        <h2 style="color: black;">Referencias</h2>
+        <p>uniwebsidad. (s.f.). 7.3. Validación (Introducción a JavaScript). https://uniwebsidad.com/libros/javascript/capitulo-7/validacion</p>
+      </div>
+    </section>
+
     <script src="lab6.js"></script>
+    
   </body>
 </html>
