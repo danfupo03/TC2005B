@@ -1,3 +1,4 @@
+//Contraseña
 function checkPassword(){
   let password = document.getElementById("password").value;
   let cnfrmPassword = document.getElementById("cnfrm-password").value;
@@ -19,3 +20,20 @@ function checkPassword(){
       message.style.color = "#000000";
   }
 }
+
+//Alerta
+const textElement = document.getElementById("myText");
+
+function displayAlert() {
+  alert("¡Puedes poner <<password>> o <<123>>, seguro no las olvidarás!");
+}
+
+let timerId;
+
+textElement.addEventListener("mouseover", function() {
+  timerId = setTimeout(displayAlert, 3000); 
+});
+
+textElement.addEventListener("mouseout", function() {
+  clearTimeout(timerId);
+});
