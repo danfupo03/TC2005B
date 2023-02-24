@@ -147,4 +147,3 @@ function table(){
     let recommendation = "Deberías escuchar - " + randomSong.getInfo();
     document.getElementById("recommendation").innerHTML = recommendation;
   }
-  
