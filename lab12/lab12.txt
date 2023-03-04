@@ -1,0 +1,6 @@
+Actualicé mi lab11 con lo visto en el lab12
+Hice las rutas antiguas más limpias accediendo 
+a archivos html. 
+Además crée una nueva ruta llamada "lista"
+que es como la vista en clase pero con perritos
+usando EJS añadiendo un head y foot. 

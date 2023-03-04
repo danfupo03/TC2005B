@@ -1,0 +1,44 @@
+<%- include('includes/head.ejs') %>
+
+<% if (perros.length > 0) { %>
+    <div class="container mt-5 mb-5">
+        <div class="columns is-multiline">
+            <% for (let perro of perros) { %>
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="<%= perro.imagen %>" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="<%= perro.imagen %>" alt="Placeholder image">
+                                </figure>
+                                </div>
+                                <div class="media-content">
+                                <p class="title is-4"><%= perro.nombre %></p>
+                                <p class="subtitle is-6"><%= perro.handle %> $<%= perro.precio %> </p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                <%= perro.descripcion %> 
+                                <br>
+                                Ingredientes:
+                                <br>
+                                <%= perro.ingredientes %> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+<% } else { %>
+    <h1>No hay perros :( </h1>
+<% } %>   
+
+<%- include('includes/foot.ejs') %>
