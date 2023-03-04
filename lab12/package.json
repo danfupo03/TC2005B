@@ -1,0 +1,31 @@
+{
+  "name": "lab12",
+  "version": "1.0.0",
+  "description": "Lab 12",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danfupo03/TC2005B.git"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "Danfupo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danfupo03/TC2005B/issues"
+  },
+  "homepage": "https://github.com/danfupo03/TC2005B#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "run": "^1.4.0",
+    "start": "^5.1.0"
+  }
+}
