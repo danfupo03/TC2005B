@@ -1,0 +1,22 @@
+¿Qué beneficios encuentras en el estilo MVC?
+Entre las principales ventajas que puede ofrecernos un desarrollo MVC podemos destacar las siguientes:
+
+- Separación clara de dónde tiene que ir cada tipo de lógica, facilitando el mantenimiento y la escalabilidad de nuestra aplicación.
+- Sencillez para crear distintas representaciones de los mismos datos.
+- Facilidad para la realización de pruebas unitarias de los componentes, así como de aplicar desarrollo guiado por pruebas (Test Driven Development o TDD).
+- Reutilización de los componentes.
+- No existe ciclo de vida de las páginas. Con menos peso, menos complejidad.
+- Motor de Routing asociando una URL concreta con su correspondiente controlador, permitiendo URL semánticas. Las URL semánticas se indexan mejor en los buscadores, siendo más adecuadas para el posicionamiento web.
+- Recomendable para el diseño de aplicaciones web compatibles con grandes equipos de desarrolladores y diseñadores web que necesitan gran control sobre el comportamiento de la aplicación.
+
+¿Encuentras alguna desventaja en el estilo arquitectónico MVC?
+Entre las principales desventajas que puede ofrecernos un desarrollo MVC podemos destacar:
+
+- Para desarrollar una aplicación bajo el patrón de diseño MVC es necesario una mayor dedicación en los tiempos iniciales del desarrollo. Normalmente el patrón exige al programador desarrollar un mayor número de clases que, en otros entornos de desarrollo, no son necesarias. Sin embargo, esta desventaja es muy relativa ya que posteriormente, en la etapa de mantenimiento de la aplicación, una aplicación MVC es mucho más mantenible, extensible y modificable que una aplicación que no lo implementa.
+- MVC requiere la existencia de una arquitectura inicial sobre la que se deben construir clases e interfaces para modificar y comunicar los módulos de una aplicación. Esta arquitectura inicial debe incluir, por lo menos, un mecanismo de eventos para poder proporcionar las notificaciones que genera el modelo de aplicación; una clase Modelo, otra clase Vista y una clase Controlador genéricas que realicen todas las tareas de comunicación, notificación y actualización que serán luego transparentes para el desarrollo de la aplicación.
+- MVC es un patrón de diseño orientado a objetos por lo que su implementación es sumamente costosa y difícil en lenguajes que no siguen este paradigma.
+
+
+---Referencias---
+1. Patrón Modelo Vista Controlador | Marco de Desarrollo de la Junta de Andalucía. (s. f.). https://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/122 
+2. SEOPRO Marketing Online. (2021, 28 octubre). ▷ ¿Qué es MVC y cuáles son sus ventajas? SEOPRO Marketing Online SL. https://seopromarketing.online/que-es-mvc-ventajas/
