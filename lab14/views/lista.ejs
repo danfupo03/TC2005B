@@ -39,6 +39,13 @@
             <a class="navbar-item" href="/lista"> Añadir Producto </a>
           </div>
         </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="/users/logout" class="button is-danger"> Log out </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -91,6 +98,12 @@
     <h1>No hay máquinas :(</h1>
     <% } %>
     <a href="/nuevo" class="button is-link is-rounded">Registrar</a>
+
+    <% if (ultimo_machine != '') { %>
+    <div class="container mt-5 mb-5 notification is-danger is-light">
+      El último producto registrado fue: <%= ultimo_machine %>
+    </div>
+    <% } %>
   </div>
 </section>
 

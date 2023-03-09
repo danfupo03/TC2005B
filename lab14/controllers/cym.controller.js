@@ -1,19 +1,17 @@
 const Machine = require("../models/cym.model");
 
 exports.get_lista = (request, response, next) => {
+  let counter = request.cookies.counter || 0;
 
-  const cookies = request.get("Cookie") || "";
+  // increment the counter and set the cookie
+  counter++;
+  response.cookie("counter", counter);
 
-  let consultas = cookies.split("=")[1] || 0;
-
-  consultas++;
-
-  response.setHeader("Set-Cookie", "consultas=" + consultas + "; HttpOnly");
-
-  response.render("lista", { machines: 
-    Machine.fetchAll(),
-    ultimo_machine: request.session.ultimo_machine || "", 
+  response.render("lista", {
+    machines: Machine.fetchAll(),
+    ultimo_machine: request.session.ultimo_machine || "",
   });
+
 };
 
 exports.get_nuevo = (request, response, next) => {
@@ -28,6 +26,8 @@ exports.post_nuevo = (request, response, next) => {
     handle: request.body.handle,
   });
   machine.save();
+
+  request.session.ultimo_machine = machine.nombre;
 
   response.status(300).redirect("/lista");
 };
