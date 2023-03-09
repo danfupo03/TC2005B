@@ -107,4 +107,8 @@
   </div>
 </section>
 
-<%- include('includes/foot.ejs') %>
+<% if (counter % 10 == 0) { %>
+<script>
+  alert("Gracias por tu preferencia");
+</script>
+<% } %> <%- include('includes/foot.ejs') %>

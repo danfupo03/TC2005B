@@ -10,8 +10,8 @@ exports.get_lista = (request, response, next) => {
   response.render("lista", {
     machines: Machine.fetchAll(),
     ultimo_machine: request.session.ultimo_machine || "",
+    counter: counter,
   });
-
 };
 
 exports.get_nuevo = (request, response, next) => {
