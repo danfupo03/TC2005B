@@ -109,6 +109,12 @@
 
 <% if (counter % 10 == 0) { %>
 <script>
-  alert("Gracias por tu preferencia");
+  let showAlert = true;
+  setTimeout(function () {
+    if (showAlert) {
+      alert("Gracias por tu preferencia!");
+      showAlert = false;
+    }
+  }, 3000);
 </script>
 <% } %> <%- include('includes/foot.ejs') %>
