@@ -1,0 +1,3 @@
+¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?
+
+¿Qué es SQL injection y cómo se puede prevenir?
