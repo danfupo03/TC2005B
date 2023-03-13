@@ -28,7 +28,7 @@ exports.post_nuevo = (request, response, next) => {
     nombre: request.body.nombre,
     imagen: request.body.imagen,
     descripcion: request.body.descripcion,
-    handle: request.body.handle,
+    marca: request.body.marca,
   });
   machine.save().then(([rows, fieldData]) => {
     request.session.ultimo_machine = machine.nombre;

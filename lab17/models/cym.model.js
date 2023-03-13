@@ -49,14 +49,14 @@ module.exports = class Machine {
     this.nombre = cym_machine.nombre || "";
     this.imagen = cym_machine.imagen || "";
     this.descripcion = cym_machine.descripcion || "";
-    this.handle = cym_machine.handle || "";
+    this.marca = cym_machine.marca || "";
   }
 
   save() {
     return db.execute(
-      `INSERT INTO durometros (nombre, imagen, descripcion, handle) 
+      `INSERT INTO durometros (nombre, imagen, descripcion, marca) 
           VALUES (?, ?, ?, ?)`,
-      [this.nombre, this.imagen, this.descripcion, this.handle]
+      [this.nombre, this.imagen, this.descripcion, this.marca]
     );
   }
 

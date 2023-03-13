@@ -7,7 +7,7 @@ const cymController = require('../controllers/cym.controller');
 
 router.get('/index', cymController.get_index);
 
-router.get('/lista/:handle', cymController.get_lista);
+router.get('/lista/:marca', cymController.get_lista);
 
 router.get('/lista', cymController.get_lista);
 
