@@ -60,11 +60,11 @@ module.exports = class Machine {
     );
   }
 
-  static fetch(id) {
+  static fetch(marca) {
     let query = `SELECT * FROM durometros`;
-    if (id != 0) {
-      query += ` WHERE id = ?`;
-      return db.execute(query, [id]);
+    if (marca != 0) {
+      query += ` WHERE marca = ?`;
+      return db.execute(query, [marca]);
     }
     return db.execute(query);
   }

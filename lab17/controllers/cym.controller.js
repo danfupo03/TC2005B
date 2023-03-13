@@ -7,9 +7,9 @@ exports.get_lista = (request, response, next) => {
   counter++;
   response.cookie("counter", counter);
 
-  const id = request.params.id || 0;
+  const marca = request.params.marca || 0;
 
-  Machine.fetch(id)
+  Machine.fetch(marca)
     .then(([rows, fieldData]) => {
       response.render("lista", {
         machines: rows,
