@@ -1,6 +1,14 @@
-¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?
-Separas todas las partes del codigo por lo que reduces la deuda tecnica.
+¿Qué otras formas de autentificación existen?
 
-¿Qué es SQL injection y cómo se puede prevenir?
-Es un ataque que se realiza a traves de una inyeccion de codigo sql en un formulario web. 
-Se puede prevenir con signos de interrogacion en los parametros de la consulta.
+Hay muchas formas de autentificación, pero las más populares son las siguientes:
+1. Autentificación de dos factores: es una forma de autentificación que requiere de dos elementos para poder acceder a un servicio. 
+Por ejemplo, el usuario y la contraseña, o el usuario y un código de seguridad.
+
+2. Autenticación QR: Este modelo utiliza la cámara del dispositivo para escanear el código y tener acceso a la información o a la plataforma. 
+Este factor garantiza que solo los usuarios seleccionados puedan acceder a su información.
+
+3. OTP (One Time Password): Este modelo utiliza un código de seguridad que se envía al usuario por SMS o correo electrónico.
+
+4. Bio-métrica: Este modelo utiliza la huella dactilar, el reconocimiento facial o la voz para acceder a la información.
+
+5. Certificado digital: Este modelo utiliza un certificado digital para acceder a la información.
