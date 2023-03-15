@@ -1,0 +1,81 @@
+<%- include('includes/head2.ejs') %>
+<header>
+  <!-- :::::La línea de búsqueda::::: -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.controlymedicion.com.mx">
+        <img src="/assets/logos/CYM.png" width="" height="70" />
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <% if(!isLoggedIn) { %>
+            <a href="/signup" class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a href="/login" class="button is-light"> Log in </a>
+            <% } %> <% if(isLoggedIn) { %>
+            <span class="navbar-item">Hola <%= nombre %> | </span>
+            <a href="/logout" class="button is-danger"> Salir </a>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- :::::El texto en la imagen::::: -->
+  <div
+    class="cover d-flex justify-content-end align-items-start flex-column p-5"
+  >
+    <h1>Control y Medición</h1>
+    <p>El mejor laboratorio de calibración de la ciudad</p>
+  </div>
+</header>
+<section>
+  <div class="container mt-5 mb-5">
+    <h1 class="title">Bienvenido a CYM</h1>
+    <% if(mensaje) { %>
+    <div class="notification is-link is-light"><%= mensaje %></div>
+    <% } %>
+    <form action="/login" method="POST">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+      <label for="username">Nombre de usuario:</label>
+      <input
+        name="username"
+        id="username"
+        class="input is-rounded"
+        type="text"
+        placeholder="Username"
+      />
+      <br /><br />
+      <label for="password">Password:</label>
+      <input
+        name="password"
+        id="password"
+        class="input is-rounded"
+        type="password"
+        placeholder="Password"
+      />
+
+      <br /><br />
+
+      <input class="button is-info is-rounded" type="submit" value="Entrar" />
+    </form>
+  </div>
+</section>
+<%- include('includes/foot.ejs')%>

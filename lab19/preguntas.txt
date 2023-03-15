@@ -1,0 +1,52 @@
+¿En qué consiste el control de acceso basado en roles?
+
+El control de acceso basado en roles es un método de control de acceso que permite a 
+los administradores de TI asignar permisos a los usuarios en función de su rol en la organización. 
+Por ejemplo: 
+Un empleado de TI puede tener acceso a la red de la empresa, pero no a los datos de los clientes. 
+Un empleado de ventas puede tener acceso a los datos de los clientes, pero no a la red de la empresa. 
+Un empleado de marketing puede tener acceso a los datos de los clientes y a la red de la empresa, pero no a 
+los datos de los empleados.
+
+------------------------------------------------------------------------------------------------------------
+
+Investiguen y describan 2 sistemas, uno que aplique RBAC y uno que no. Realicen un análisis de las ventajas y 
+desventajas de cada uno con respecto al control de acceso.
+
+Aplicaciones que utilizan RBAC:
+
+Microsoft Azure: la plataforma de nube de Microsoft utiliza RBAC para asignar roles y permisos a los usuarios y 
+grupos de usuarios en Azure.
+WordPress: el popular CMS utiliza RBAC para controlar el acceso a las diferentes funciones de la plataforma, como 
+la gestión de contenido, la administración del sitio y la creación de usuarios.
+Oracle Database: la base de datos de Oracle utiliza RBAC para controlar el acceso a las diferentes funciones de la 
+base de datos, como la creación de tablas, la gestión de usuarios y los permisos de acceso a los datos.
+
+Aplicaciones que no utilizan RBAC:
+
+FTP (File Transfer Protocol): el protocolo de transferencia de archivos no utiliza RBAC para controlar el acceso a 
+los archivos y carpetas. En su lugar, utiliza un sistema de autenticación basado en nombres de usuario y contraseñas.
+Telnet: el protocolo de comunicación remota no utiliza RBAC para controlar el acceso a los sistemas remotos. 
+En su lugar, utiliza un sistema de autenticación basado en nombres de usuario y contraseñas.
+Microsoft Excel: la hoja de cálculo no utiliza RBAC para controlar el acceso a las funciones y datos de la aplicación. 
+En su lugar, utiliza un sistema de permisos de archivo y contraseñas para proteger los datos.
+
+-- Ventajas y desventajas -- 
+
+Ventajas de utilizar RBAC:
+
+Mayor seguridad: RBAC permite controlar el acceso a los recursos de la aplicación de manera granular, lo que reduce 
+el riesgo de que usuarios no autorizados accedan a recursos críticos.
+Mayor flexibilidad: RBAC permite otorgar permisos y roles a los usuarios de manera dinámica, lo que facilita la gestión 
+de la seguridad y el cumplimiento de normas y regulaciones.
+Mayor eficiencia: RBAC reduce la carga administrativa al simplificar la gestión de permisos y roles, lo que puede mejorar 
+la eficiencia operativa y reducir los costos asociados.
+
+Desventajas de utilizar RBAC:
+
+Implementación compleja: La implementación de RBAC puede ser compleja y requerir cambios significativos en la arquitectura 
+de la aplicación y en los procesos de gestión de usuarios y roles.
+Mayor costo: La implementación de RBAC puede requerir la adquisición de software y hardware especializado y la contratación 
+de personal capacitado, lo que puede aumentar los costos asociados.
+Mayor rigidez: RBAC puede ser demasiado rígido para algunas aplicaciones, ya que puede limitar la flexibilidad y la capacidad 
+de personalización de la aplicación.
