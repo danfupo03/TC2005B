@@ -50,3 +50,18 @@ Mayor costo: La implementación de RBAC puede requerir la adquisición de softwa
 de personal capacitado, lo que puede aumentar los costos asociados.
 Mayor rigidez: RBAC puede ser demasiado rígido para algunas aplicaciones, ya que puede limitar la flexibilidad y la capacidad 
 de personalización de la aplicación.
+
+------------------------------------------------------------------------------------------------------------
+
+Referencias:
+
+Microsoft Azure. (s. f.). Overview of role-based access control (RBAC). https://docs.microsoft.com/en-us/azure/role-based-access-control/overview
+WordPress. (s. f.). Roles and capabilities. https://wordpress.org/support/article/roles-and-capabilities/
+Oracle Database. (s. f.). Using roles to control database security. https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/using-roles-to-control-database-security.html
+
+Wikipedia. (2021). File Transfer Protocol - Security. https://en.wikipedia.org/wiki/File_Transfer_Protocol#Security
+Wikipedia. (2022). Telnet - Security. https://en.wikipedia.org/wiki/Telnet#Security
+Ablebits. (2014, 9 diciembre). Excel password protection: How to protect Excel file with password. https://www.ablebits.com/office-addins-blog/2014/12/09/excel-password-protection/
+
+Cisco. (s. f.). Role-Based Access Control. https://www.cisco.com/c/en/us/products/security/role-based-access-control.html#~benefits
+Prov International. (2019, 18 septiembre). Why Role-Based Access Control (RBAC) is Critical for Enterprise Security. https://www.provintl.com/blog/why-role-based-access-control-rbac-is-critical-for-enterprise-security
