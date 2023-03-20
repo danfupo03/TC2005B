@@ -1,0 +1,6 @@
+Describe el archivo package.json
+
+El archivo package. json contiene todos 
+los metadatos acerca del proyecto tal 
+como descripción, licencia, dependencias 
+y scripts.
