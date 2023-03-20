@@ -48,10 +48,18 @@ exports.post_login = (request, response, next) => {
 };
 
 exports.get_signup = (request, response, next) => {
+  let mensaje = "";
+
+  if (request.session.mensaje != "") {
+    mensaje = request.session.mensaje;
+    request.session.mensaje = "";
+  }
+
   response.render("signup", {
     isLoggedIn: request.session.isLoggedIn || false,
     nombre: request.session.nombre || "",
     csrfToken: request.csrfToken(),
+    mensaje: mensaje,
   });
 };
 
@@ -69,7 +77,11 @@ exports.post_signup = (request, response, next) => {
 
       response.redirect("/login");
     })
-    .catch((error) => console.log(error));
+    .catch((error) => {
+      console.log(error);
+      request.session.mensaje = "El nombre de usuario ya existe";
+      response.redirect("/signup");
+    });
 };
 
 exports.logout = (request, response, next) => {

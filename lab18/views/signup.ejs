@@ -49,6 +49,9 @@
 <section>
   <div class="container mt-5 mb-5">
     <h1 class="title">Registrar Usuario</h1>
+    <% if(mensaje) { %>
+    <div class="notification is-danger is-light"><%= mensaje %></div>
+    <% } %>
     <form action="/signup" method="POST">
       <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
       <label for="nombre">Nombre:</label>
