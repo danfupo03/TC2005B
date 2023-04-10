@@ -62,6 +62,13 @@ exports.get_index = (request, response, next) => {
   });
 };
 
+exports.get_apis = (request, response, next) => {
+  response.render("apis", {
+    isLoggedIn: request.session.isLoggedIn || false,
+    nombre: request.session.nombre || "",
+  });
+};
+
 exports.get_historia = (request, response, next) => {
   response.render("historia", {
     isLoggedIn: request.session.isLoggedIn || false,
