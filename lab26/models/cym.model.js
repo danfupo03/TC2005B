@@ -7,13 +7,14 @@ module.exports = class Machine {
     this.descripcion = cym_machine.descripcion || "";
     this.marca = cym_machine.marca || "";
     this.tipo = cym_machine.tipo || "";
+    this.pdf = cym_machine.pdf || "";
   }
 
   save() {
     return db.execute(
-      `INSERT INTO durometros (nombre, imagen, descripcion, marca, tipo) 
-          VALUES (?, ?, ?, ?, ?)`,
-      [this.nombre, this.imagen, this.descripcion, this.marca, this.tipo]
+      `INSERT INTO durometros (nombre, imagen, descripcion, marca, tipo, pdf) 
+          VALUES (?, ?, ?, ?, ?, ?)`,
+      [this.nombre, this.imagen, this.descripcion, this.marca, this.tipo, this.pdf]
     );
   }
 

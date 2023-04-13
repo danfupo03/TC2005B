@@ -1,20 +1,11 @@
 <%- include('includes/head.ejs') %>
 <header>
-  <!-- :::::La línea de búsqueda::::: -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
         <img src="/assets/logos/CYM.png" alt="" width="" height="70" />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -26,29 +17,15 @@
             <a class="nav-link" href="/historia">Historia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/laboratorio"
-              >Laboratorio de Calibración</a
-            >
+            <a class="nav-link active" href="/laboratorio">Laboratorio de Calibración</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/servicios">Nuestros Servicios</a>
+          </li class="nav-item">
+            <a class="nav-link" href="/lista">Ver productos</a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Productos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a class="dropdown-item" href="/lista">Añadir producto</a>
-              </li>
-            </ul>
+          </li class="nav-item">
+            <a class="nav-link" href="/apis">Ver Apis</a>
           </li>
         </ul>
         <% if(isLoggedIn) { %>
@@ -58,13 +35,11 @@
       </div>
     </div>
   </nav>
-  <!-- :::::El texto en la imagen::::: -->
-  <div
-    class="cover d-flex justify-content-end align-items-start flex-column p-5"
-  >
+  <div class="cover d-flex justify-content-center align-items-center flex-column">
     <h1>Control y Medición</h1>
 
     <p>El mejor laboratorio de calibración de la ciudad</p>
+    <a class="btn btn-primary" href="/historia" role="button">Conoce más</a>
   </div>
 </header>
 
@@ -73,11 +48,7 @@
   <div class="container mt-5 mb-5">
     <div class="row justify-content-center">
       <h3>Laboratorio de calibración</h3>
-      <img
-        src="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=jpg/path/s09cbab276dc8a8fd/image/if2ee0256d1ef5ba0/version/1667856534/image.jpg"
-        class="img-fluid"
-        alt="..."
-      />
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=jpg/path/s09cbab276dc8a8fd/image/if2ee0256d1ef5ba0/version/1667856534/image.jpg" class="img-fluid" alt="..." />
       <h4 class="mt-4">Nuestro compromiso</h4>
       <p class="justify-text">
         Hemos estado trabajando con usted a lo largo de 50 años para ofrecerle
@@ -138,11 +109,7 @@
 <section>
   <div class="container mt-5 mb-5">
     <div class="row justify-content-center">
-      <img
-        src="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=jpg/path/s09cbab276dc8a8fd/image/ia6b730e2262cd32d/version/1581447286/image.jpg"
-        class="img-fluid"
-        alt="Showroom en la ciudad de Querétaro"
-      />
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=970x10000:format=jpg/path/s09cbab276dc8a8fd/image/ia6b730e2262cd32d/version/1581447286/image.jpg" class="img-fluid" alt="Showroom en la ciudad de Querétaro" />
     </div>
   </div>
 </section>

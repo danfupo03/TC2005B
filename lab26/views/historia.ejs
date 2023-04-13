@@ -1,21 +1,12 @@
 <%- include('includes/head.ejs') %>
 <!-- :::::El encabezado::::: -->
 <header>
-  <!-- :::::La línea de búsqueda::::: -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
         <img src="/assets/logos/CYM.png" alt="" width="" height="70" />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -27,29 +18,15 @@
             <a class="nav-link active" href="/historia">Historia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/laboratorio"
-              >Laboratorio de Calibración</a
-            >
+            <a class="nav-link" href="/laboratorio">Laboratorio de Calibración</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/servicios">Nuestros Servicios</a>
+          </li class="nav-item">
+            <a class="nav-link" href="/lista">Ver productos</a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Productos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a class="dropdown-item" href="/lista">Añadir producto</a>
-              </li>
-            </ul>
+          </li class="nav-item">
+            <a class="nav-link" href="/apis">Ver Apis</a>
           </li>
         </ul>
         <% if(isLoggedIn) { %>
@@ -59,12 +36,11 @@
       </div>
     </div>
   </nav>
-  <!-- :::::El texto en la imagen::::: -->
-  <div
-    class="cover d-flex justify-content-end align-items-start flex-column p-5"
-  >
+  <div class="cover d-flex justify-content-center align-items-center flex-column">
     <h1>Control y Medición</h1>
+
     <p>El mejor laboratorio de calibración de la ciudad</p>
+    <a class="btn btn-primary" href="/historia" role="button">Conoce más</a>
   </div>
 </header>
 <!-- :::::El texto de la historia::::: -->

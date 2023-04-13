@@ -47,7 +47,8 @@ exports.post_nuevo = (request, response, next) => {
     descripcion: request.body.descripcion,
     marca: request.body.marca,
     tipo: request.body.tipo,
-    imagen: request.file.filename,
+    imagen: request.files.imagen[0].filename,
+    pdf: request.files.pdf[0].filename,
   });
   machine.save().then(([rows, fieldData]) => {
     request.session.ultimo_machine = machine.nombre;
